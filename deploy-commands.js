@@ -25,5 +25,5 @@ const rest = new REST({
 rest.put(Routes.applicationCommands(clientId), {
     body: commands
   })
-  .then(() => console.log('Successfully registered application commands.'))
+  .then(() => console.log('Sukses menambahkan slash command.'))
   .catch(console.error);
