@@ -1,22 +1,22 @@
 module.exports = {
   name: 'ready',
   async execute(client) {
-    console.log('Ticket Bot ready!')
-    console.log('Thank you very much for using Ticket Bot! Developed with the ❤️ by Sayrix');
+    console.log('Ticket bot sukses di jalankan')
+    client.user.setActivity('Tickets', { type: 'PLAYING' })
     const oniChan = client.channels.cache.get(client.config.ticketChannel)
 
     function sendTicketMSG() {
       const embed = new client.discord.MessageEmbed()
         .setColor('6d6ee8')
-        .setAuthor('Ticket', client.user.avatarURL())
-        .setDescription('Cliquez sur le bouton ci-dessous pour ouvrir un ticket')
-        .setFooter(client.config.footerText, client.user.avatarURL())
+        .setAuthor('Membuat Tiket', client.user.avatarURL())
+        .setDescription('Klik  📩  untuk membuat tiket!')
+        .setFooter('Gazor', client.user.avatarURL())
       const row = new client.discord.MessageActionRow()
         .addComponents(
           new client.discord.MessageButton()
           .setCustomId('open-ticket')
-          .setLabel('Ouvrir un ticket')
-          .setEmoji('✉️')
+          .setLabel('Klik disini!')
+          .setEmoji('📩')
           .setStyle('PRIMARY'),
         );
 
@@ -30,7 +30,7 @@ module.exports = {
 
     async function fetchMore(channel, limit) {
       if (!channel) {
-        throw new Error(`Expected channel, got ${typeof channel}.`);
+        throw new Error(`Tipe channel salah!, tipe yang di temukan: ${typeof channel}.`);
       }
       if (limit <= 100) {
         return channel.messages.fetch({
