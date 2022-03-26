@@ -1,4 +1,4 @@
-# Ticket Bot
+# Ticket Bot - Indonesia Translation
 
 Ticket Bot is a discord ticket bot with buttons made with Discord.js v13
 
@@ -49,5 +49,3 @@ npm i
 node deploy-commands.js # To deploy s/ash commands
 node index.js # To start the ticket-bot
 ```
-
-## Many thanks to the people who will put a ⭐!
