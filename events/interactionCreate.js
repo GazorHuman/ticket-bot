@@ -117,7 +117,7 @@ module.exports = {
                 },
                 {
                   id: client.config.roleSupport,
-                  deny: ['SEND_MESSAGES', 'VIEW_CHANNEL'],
+                  allow: ['SEND_MESSAGES', 'VIEW_CHANNEL'],
                 },
                 {
                   id: interaction.guild.roles.everyone,
