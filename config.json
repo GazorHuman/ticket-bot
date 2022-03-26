@@ -1,18 +1,18 @@
 {
-  "clientId": "939522113033879622",
+  "clientId": "939522113033879622", /*Bot Client ID, Dari "https://discord.com/developers/applications" */
 
 
-  "parentOpened": "909470181305241600",
-  "parentOrder": "909498861482037288",
-  "parentSupport": "909499621519269930",
-  "parentReport": "909501186183413850",
+  "parentOpened": "909470181305241600",  /* Category ID, untuk ticket channel baru terbuat */
+  "parentOrder": "909498861482037288", /* Category ID, untuk ticket order terbuat */
+  "parentSupport": "909499621519269930", /* Category ID, untuk ticket Support terbuat */
+  "parentReport": "909501186183413850", /* Category ID, untuk ticket Report terbuat */
 
 
-  "roleSupport": "948822370301394994",
+  "roleSupport": "948822370301394994", /* Role support ID, atau disebut sebagai ticket manager */
 
   
-  "logsTicket": "948817726967791626",
-  "ticketChannel": "948817746681028629",
+  "logsTicket": "948817726967791626", /* Channel ID untuk ticket logs */
+  "ticketChannel": "948817746681028629", /*Ticket Channel ID untuk channel dimana orang membuat ticket*/
 
-  "footerText": "Gazor"
+  "footerText": "Gazor" /*Footer text di embed */
 }
