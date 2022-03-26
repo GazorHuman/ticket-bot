@@ -5,10 +5,10 @@ const {
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('add')
-    .setDescription('Ajoute quelqu\'un au ticket')
+    .setDescription('Menambahkan seseorang ke dalam ticket')
     .addUserOption(option =>
       option.setName('target')
-      .setDescription('Membre à ajouter au ticket')
+      .setDescription('Nama seseorang yang ingin di tambahkan')
       .setRequired(true)),
   async execute(interaction, client) {
     const chan = client.channels.cache.get(interaction.channelId);
@@ -24,19 +24,15 @@ module.exports = {
           id: interaction.guild.roles.everyone,
           deny: ['VIEW_CHANNEL'],
         },
-          {
-            id: client.config.roleSupport,
-            allow: ['SEND_MESSAGES', 'VIEW_CHANNEL'],
-          },
       ],
       }).then(async () => {
         interaction.reply({
-          content: `<@${user.id}> a été ajouté au ticket !`
+          content: `<@${user.id}> telah di tambahkan ke dalam ticket!`
         });
       });
     } else {
       interaction.reply({
-        content: 'Vous n\'êtes pas dans un ticket !',
+        content: 'Command ini hanya bisa digunakan di dalam ticket!',
         ephemeral: true
       });
     };
