@@ -40,7 +40,7 @@ module.exports = {
           .setColor('6d6ee8')
           .setAuthor('Kategori tiket')
           .setDescription('Pilih kategori tiket dengan klik tanda panah di bawah!')
-          .setFooter('RenchCraft', client.user.avatarURL())
+          .setFooter('Gazor', client.user.avatarURL())
           .setTimestamp();
 
         const row = new client.discord.MessageActionRow()
@@ -85,7 +85,7 @@ module.exports = {
                   .setColor('6d6ee8')
                   .setAuthor(`Ticket`)
                   .setDescription(`<@!${interaction.user.id}> Tunggu sampai staff membaca tiket kamu! ${i.values[0]}`)
-                  .setFooter('RenchCraft', client.user.avatarURL())
+                  .setFooter('Gazor', client.user.avatarURL())
                   .setTimestamp();
 
                 const row = new client.discord.MessageActionRow()
@@ -234,7 +234,7 @@ module.exports = {
                 .setColor('6d6ee8')
                 .setAuthor('Ticket')
                 .setDescription('```Kontrol tiket```')
-                .setFooter('RenchCraft', client.user.avatarURL())
+                .setFooter('Gazor', client.user.avatarURL())
                 .setTimestamp();
 
               const row = new client.discord.MessageActionRow()
@@ -295,14 +295,14 @@ module.exports = {
               .setAuthor('Pesan Tiket')
               .setDescription(`📰 Pesan di dalam tiket \`${chan.id}\` Di buat oleh <@!${chan.topic}> Dan di hapus oleh <@!${interaction.user.id}>\n\nLogs: [**Klik disini untuk melihat**](${urlToPaste})`)
               .setColor('2f3136')
-              .setFooter('RenchCraft', client.user.avatarURL())
+              .setFooter('Gazor', client.user.avatarURL())
               .setTimestamp();
 
             const embed2 = new client.discord.MessageEmbed()
               .setAuthor('Pesan Tiket')
               .setDescription(`📰 Pesan di dalam tiket \`${chan.id}\`: [**Klik disini untuk melihat**](${urlToPaste})`)
               .setColor('2f3136')
-              .setFooter('RenchCraft', client.user.avatarURL())
+              .setFooter('Gazor', client.user.avatarURL())
               .setTimestamp();
 
             client.channels.cache.get(client.config.logsTicket).send({
